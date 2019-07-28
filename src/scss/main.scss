@@ -1,19 +1,44 @@
 @import "_normalize";
 @import "_variables";
 
-
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
+  align-items: center;
   background: $primaryBackground;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 16px;
 }
 
 .editor__header {
   color: $headerColor;
+}
+
+.editor__form {
+  background: linear-gradient(
+    228.26deg,
+    #15006b 20.98%,
+    rgba(12, 53, 196, 0.5625) 55.56%,
+    rgba(14, 11, 159, 0.25) 99.1%
+  );
+  border-radius: 5px;
+  height: 336px;
+  max-width: 544px;
+  padding: 24px;
+  width: 100%;
+}
+
+.editor__textarea {
+  width: 496px;
+  height: 288px;
 }
