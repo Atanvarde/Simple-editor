@@ -31,6 +31,7 @@ body {
   width: 96px;
   height: 40px;
   background: #f4f841;
+  border:none;
   box-shadow: 0px 6px 10px rgba(244, 248, 65, 0.4);
   border-radius: 20px 0px;
   font-size: 22px;
@@ -38,8 +39,12 @@ body {
   letter-spacing: 1px;
   color: #1424ae;
   text-transform: uppercase;
-  border: none;
-  outline-color:aliceblue;
+  outline-color: aliceblue;
+  transition: background-color .2s ease-out;
+}
+
+.editor__button--load:hover {
+  background: #f7f8ab;
 }
 
 .editor__button--save {
@@ -54,9 +59,14 @@ body {
   text-transform: uppercase;
   border-radius: 20px 0px;
   border: none;
-  outline-color:aliceblue;
+  outline-color: aliceblue;
   margin-left: 24px;
   margin-right: 40px;
+  transition: background-color .2s ease-out;
+}
+
+.editor__button--save:hover {
+  background: #164ecf;
 }
 
 .editor__header {
@@ -90,7 +100,7 @@ body {
   height: 288px;
   font-size: 28px;
   line-height: 24px;
-  color: #15006b;
+  color: #3f51b5;
   outline-color: aliceblue;
   padding: 16px;
 }
