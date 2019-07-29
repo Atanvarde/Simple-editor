@@ -23,6 +23,7 @@ const buttonSave = document.querySelector(".editor__button--save-js");
 const buttonRemove = document.querySelector(".editor__button--remove-js");
 
 const textarea = document.querySelector(".editor__textarea--js");
+textarea.value = "";
 
 buttonSave.addEventListener('click', () => {
   localStorage.setItem('textwritten', textarea.value);
@@ -33,7 +34,8 @@ buttonLoad.addEventListener('click', () => {
 });
 
 buttonRemove.addEventListener('click', () => {
-  localStorage.removeItem('textwritten');
+  localStorage.clear();
+  textarea.value = "";
 });
 
 
