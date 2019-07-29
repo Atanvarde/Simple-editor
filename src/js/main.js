@@ -16,11 +16,11 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 
-const buttonLoad = document.querySelector(".editor__button--load-js");
+const buttonLoad = document.querySelector(".button__load--js");
 
-const buttonSave = document.querySelector(".editor__button--save-js");
+const buttonSave = document.querySelector(".button__save--js");
 
-const buttonRemove = document.querySelector(".editor__button--remove-js");
+const buttonRemove = document.querySelector(".button__remove--js");
 
 const textarea = document.querySelector(".editor__textarea--js");
 textarea.value = "";

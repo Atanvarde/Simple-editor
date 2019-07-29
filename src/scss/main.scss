@@ -22,12 +22,12 @@ body {
   padding: 16px;
 }
 
-.editor__button {
+.button {
   display: flex;
   justify-content: flex-end;
 }
 
-.editor__button--load {
+.button__load {
   width: 96px;
   height: 40px;
   background: $thirdColor;
@@ -44,11 +44,11 @@ body {
   margin-left:24px;
 }
 
-.editor__button--load:hover {
+.button__load:hover {
   background: #f7f8ab;
 }
 
-.editor__button--remove {
+.button__remove {
   width: 128px;
   height: 40px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -67,14 +67,14 @@ body {
   transition: background-color 0.2s ease-out;
 }
 
-.editor__button--remove:hover {
+.button__remove:hover {
   background: #fa6a6a;
 }
 
 .editor__textarea-wrapper{
   margin:0;
 }
-.editor__button--save {
+.button__save {
   width: 96px;
   height: 40px;
   background: $secondColor;
@@ -90,7 +90,7 @@ body {
   transition: background-color 0.2s ease-out;
 }
 
-.editor__button--save:hover {
+.button__save:hover {
   background: #164ecf;
 }
 
