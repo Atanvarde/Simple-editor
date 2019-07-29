@@ -20,6 +20,8 @@ const buttonLoad = document.querySelector(".editor__button--load-js");
 
 const buttonSave = document.querySelector(".editor__button--save-js");
 
+const buttonRemove = document.querySelector(".editor__button--remove-js");
+
 const textarea = document.querySelector(".editor__textarea--js");
 
 buttonSave.addEventListener('click', () => {
@@ -30,7 +32,8 @@ buttonLoad.addEventListener('click', () => {
   textarea.value = localStorage.getItem('textwritten');
 });
 
-localStorage.removeItem('textwritten');
-
+buttonRemove.addEventListener('click', () => {
+  localStorage.removeItem('textwritten');
+});
 
 

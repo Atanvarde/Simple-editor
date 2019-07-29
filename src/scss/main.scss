@@ -31,7 +31,7 @@ body {
   width: 96px;
   height: 40px;
   background: $thirdColor;
-  border:none;
+  border: none;
   box-shadow: 0px 6px 10px rgba(244, 248, 65, 0.4);
   border-radius: 20px 0px;
   font-size: 22px;
@@ -39,13 +39,38 @@ body {
   letter-spacing: 1px;
   color: $secondColor;
   text-transform: uppercase;
-  outline-color: aliceblue;
-  transition: background-color .2s ease-out;
+  outline-color: $primaryBackground;
+  transition: background-color 0.2s ease-out;
+  margin-left:24px;
 }
 
 .editor__button--load:hover {
   background: #f7f8ab;
 }
+
+.editor__button--remove {
+  width: 128px;
+  height: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 22px;
+  line-height: 20px;
+  border: none;
+  border-radius: 20px 0px;
+  letter-spacing: 1px;
+  color: #1424ae;
+  background: #f84141;
+  box-shadow: 0px 6px 10px rgba(248, 65, 65, 0.4);
+  text-transform: uppercase;
+  margin-left: 24px;
+  margin-right: 40px;
+  outline-color: $primaryBackground;
+  transition: background-color 0.2s ease-out;
+}
+
+.editor__button--remove:hover {
+  background: #fa6a6a;
+}
+
 
 .editor__button--save {
   width: 96px;
@@ -59,10 +84,8 @@ body {
   text-transform: uppercase;
   border-radius: 20px 0px;
   border: none;
-  outline-color: aliceblue;
-  margin-left: 24px;
-  margin-right: 40px;
-  transition: background-color .2s ease-out;
+  outline-color: $primaryBackground;
+  transition: background-color 0.2s ease-out;
 }
 
 .editor__button--save:hover {
