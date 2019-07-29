@@ -14,7 +14,7 @@ html {
 
 body {
   align-items: center;
-  background: $primaryBackground;
+  background: $iron;
   display: flex;
   font-family: "Dynalight", cursive;
   justify-content: center;
@@ -30,16 +30,16 @@ body {
 .button__load {
   width: 96px;
   height: 40px;
-  background: $thirdColor;
+  background: $yellow;
   border: none;
   box-shadow: 0px 6px 10px rgba(244, 248, 65, 0.4);
   border-radius: 20px 0px;
   font-size: 22px;
   line-height: 20px;
   letter-spacing: 1px;
-  color: $secondColor;
+  color: $blue;
   text-transform: uppercase;
-  outline-color: $primaryBackground;
+  outline-color: $iron;
   transition: background-color 0.2s ease-out;
   margin-left:24px;
 }
@@ -63,7 +63,7 @@ body {
   text-transform: uppercase;
   margin-left: 24px;
   margin-right: 40px;
-  outline-color: $primaryBackground;
+  outline-color: $iron;
   transition: background-color 0.2s ease-out;
 }
 
@@ -77,16 +77,16 @@ body {
 .button__save {
   width: 96px;
   height: 40px;
-  background: $secondColor;
+  background: $blue;
   box-shadow: 0px 6px 10px rgba(20, 36, 174, 0.4);
   font-size: 22px;
   line-height: 20px;
   letter-spacing: 1px;
-  color: $thirdColor;
+  color: $yellow;
   text-transform: uppercase;
   border-radius: 20px 0px;
   border: none;
-  outline-color: $primaryBackground;
+  outline-color: $iron;
   transition: background-color 0.2s ease-out;
 }
 
@@ -95,7 +95,7 @@ body {
 }
 
 .editor__header {
-  color: $secondColor;
+  color: $blue;
   font-weight: normal;
   font-size: 48px;
   line-height: 64px;
