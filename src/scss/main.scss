@@ -30,14 +30,14 @@ body {
 .editor__button--load {
   width: 96px;
   height: 40px;
-  background: #f4f841;
+  background: $thirdColor;
   border:none;
   box-shadow: 0px 6px 10px rgba(244, 248, 65, 0.4);
   border-radius: 20px 0px;
   font-size: 22px;
   line-height: 20px;
   letter-spacing: 1px;
-  color: #1424ae;
+  color: $secondColor;
   text-transform: uppercase;
   outline-color: aliceblue;
   transition: background-color .2s ease-out;
@@ -50,12 +50,12 @@ body {
 .editor__button--save {
   width: 96px;
   height: 40px;
-  background: #1424ae;
+  background: $secondColor;
   box-shadow: 0px 6px 10px rgba(20, 36, 174, 0.4);
   font-size: 22px;
   line-height: 20px;
   letter-spacing: 1px;
-  color: #f4f841;
+  color: $thirdColor;
   text-transform: uppercase;
   border-radius: 20px 0px;
   border: none;
@@ -70,7 +70,7 @@ body {
 }
 
 .editor__header {
-  color: $headerColor;
+  color: $secondColor;
   font-weight: normal;
   font-size: 48px;
   line-height: 64px;
