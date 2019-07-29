@@ -33,8 +33,10 @@
         <h1 class="editor__header">My editor</h1>
       </header>
       <form class="editor__form">
-        <textarea class="editor__textarea editor__textarea--js" name="textarea" placeholder="Just write...">
-        </textarea>
+        <p class="editor__textarea-wrapper">
+          <label for="textarea"></label>
+          <textarea id="textarea" name="textarea" placeholder="Just write..." autofocus class="editor__textarea editor__textarea--js"></textarea>
+        </p>
       </form>
       <div class="editor__button">
         <button class="editor__button--save editor__button--save-js">Save</button>
