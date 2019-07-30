@@ -20,7 +20,7 @@ const buttonLoad = document.querySelector(".form__button--load-js");
 
 const buttonSave = document.querySelector(".form__button--save-js");
 
-const buttonRemove = document.querySelector(".form__button--delete-js");
+const buttonDelete = document.querySelector(".form__button--delete-js");
 
 const textarea = document.querySelector(".form__textarea--js");
 textarea.value = "";
@@ -33,7 +33,7 @@ buttonLoad.addEventListener('click', () => {
   textarea.value = localStorage.getItem('textwritten');
 });
 
-buttonRemove.addEventListener('click', () => {
+buttonDelete.addEventListener('click', () => {
   localStorage.clear();
   textarea.value = "";
 });
