@@ -22,90 +22,20 @@ body {
   padding: 16px;
 }
 
-.button {
-  display: flex;
-  justify-content: flex-end;
+.editor {
+  &__header {
+    color: $blue;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 9px;
+    text-indent: 24px;
+    text-shadow: 0px 2px 5px rgba(20, 36, 174, 0.8);
+    transform: rotate(-0.1deg);
+  }
 }
 
-.button__load {
-  background: $yellow;
-  border: none;
-  border-radius: 20px 0px;
-  box-shadow: 0px 6px 10px rgba(244, 248, 65, 0.4);
-  color: $blue;
-  height: 40px;
-  font-size: 22px;
-  line-height: 20px;
-  letter-spacing: 1px;
-  margin-left: 24px;
-  outline-color: $iron;
-  text-transform: uppercase;
-  transition: background-color 0.2s ease-out;
-  width: 96px;
-}
-
-.button__load:hover {
-  background: #f7f8ab;
-}
-
-.button__remove {
-  width: 128px;
-  height: 40px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 22px;
-  line-height: 20px;
-  border: none;
-  border-radius: 20px 0px;
-  letter-spacing: 1px;
-  color: #1424ae;
-  background: #f84141;
-  box-shadow: 0px 6px 10px rgba(248, 65, 65, 0.4);
-  text-transform: uppercase;
-  margin-left: 24px;
-  margin-right: 40px;
-  outline-color: $iron;
-  transition: background-color 0.2s ease-out;
-}
-
-.button__remove:hover {
-  background: #fa6a6a;
-}
-
-.editor__textarea-wrapper {
-  margin: 0;
-}
-.button__save {
-  width: 96px;
-  height: 40px;
-  background: $blue;
-  box-shadow: 0px 6px 10px rgba(20, 36, 174, 0.4);
-  font-size: 22px;
-  line-height: 20px;
-  letter-spacing: 1px;
-  color: $yellow;
-  text-transform: uppercase;
-  border-radius: 20px 0px;
-  border: none;
-  outline-color: $iron;
-  transition: background-color 0.2s ease-out;
-}
-
-.button__save:hover {
-  background: #164ecf;
-}
-
-.editor__header {
-  color: $blue;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 64px;
-  margin-bottom: 9px;
-  text-indent: 24px;
-  text-shadow: 0px 2px 5px rgba(20, 36, 174, 0.8);
-  transform: rotate(-0.1deg);
-}
-
-.editor__form {
+.form {
   background: linear-gradient(
     228.26deg,
     #15006b 20.98%,
@@ -115,17 +45,71 @@ body {
   border-radius: 5px;
   height: 336px;
   margin-bottom: 16px;
-  max-width: 544px;
   padding: 24px;
-  width: 100%;
+  &__button {
+    border: none;
+    border-radius: 20px 0px;
+    font-size: 22px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    outline-color: $iron;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-out;
+    &--delete {
+      min-width: 128px;
+      height: 40px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      color: #1424ae;
+      background: #f84141;
+      box-shadow: 0px 6px 10px rgba(248, 65, 65, 0.4);
+      margin-left: 24px;
+      margin-right: 40px;
+      &:hover {
+        background: #fa6a6a;
+      }
+    }
+    &--load {
+      background: $yellow;
+      box-shadow: 0px 6px 10px rgba(244, 248, 65, 0.4);
+      color: $blue;
+      height: 40px;
+      margin-left: 24px;
+      min-width: 96px;
+      &:hover {
+        background: #f7f8ab;
+      }
+    }
+    &--save {
+      min-width: 96px;
+      height: 40px;
+      background: $blue;
+      box-shadow: 0px 6px 10px rgba(20, 36, 174, 0.4);
+      color: $yellow;
+      &:hover {
+        background: #164ecf;
+      }
+    }
+  }
+  &__button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__textarea-wrapper {
+    margin: 0;
+  }
+  &__textarea {
+    border-radius: 5px;
+    min-height: 288px;
+    font-size: 28px;
+    line-height: 24px;
+    color: #3f51b5;
+    outline-color: aliceblue;
+    padding: 16px;
+    width: 100%;
+  }
 }
 
-.editor__textarea {
-  width: 496px;
-  height: 288px;
-  font-size: 28px;
-  line-height: 24px;
-  color: #3f51b5;
-  outline-color: aliceblue;
-  padding: 16px;
+.main {
+  max-width: 544px;
+  width: 100%;
 }

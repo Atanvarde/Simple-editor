@@ -16,13 +16,13 @@ if ('serviceWorker' in navigator) {
 
 // place your code below
 
-const buttonLoad = document.querySelector(".button__load--js");
+const buttonLoad = document.querySelector(".form__button--load-js");
 
-const buttonSave = document.querySelector(".button__save--js");
+const buttonSave = document.querySelector(".form__button--save-js");
 
-const buttonRemove = document.querySelector(".button__remove--js");
+const buttonRemove = document.querySelector(".form__button--delete-js");
 
-const textarea = document.querySelector(".editor__textarea--js");
+const textarea = document.querySelector(".form__textarea--js");
 textarea.value = "";
 
 buttonSave.addEventListener('click', () => {
