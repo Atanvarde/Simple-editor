@@ -28,20 +28,20 @@ body {
 }
 
 .button__load {
-  width: 96px;
-  height: 40px;
   background: $yellow;
   border: none;
-  box-shadow: 0px 6px 10px rgba(244, 248, 65, 0.4);
   border-radius: 20px 0px;
+  box-shadow: 0px 6px 10px rgba(244, 248, 65, 0.4);
+  color: $blue;
+  height: 40px;
   font-size: 22px;
   line-height: 20px;
   letter-spacing: 1px;
-  color: $blue;
-  text-transform: uppercase;
+  margin-left: 24px;
   outline-color: $iron;
+  text-transform: uppercase;
   transition: background-color 0.2s ease-out;
-  margin-left:24px;
+  width: 96px;
 }
 
 .button__load:hover {
@@ -71,8 +71,8 @@ body {
   background: #fa6a6a;
 }
 
-.editor__textarea-wrapper{
-  margin:0;
+.editor__textarea-wrapper {
+  margin: 0;
 }
 .button__save {
   width: 96px;
