@@ -344,6 +344,10 @@ body {
   -webkit-transform: rotate(-0.1deg);
       -ms-transform: rotate(-0.1deg);
           transform: rotate(-0.1deg); }
+  @media (max-width: 360px) {
+    .editor__header {
+      font-size: 36px;
+      line-height: 48px; } }
 
 .form {
   background: -webkit-linear-gradient(221.74deg, #15006b 20.98%, rgba(12, 53, 196, 0.5625) 55.56%, rgba(14, 11, 159, 0.25) 99.1%);
@@ -364,11 +368,14 @@ body {
     -webkit-transition: background-color 0.2s ease-out;
     -o-transition: background-color 0.2s ease-out;
     transition: background-color 0.2s ease-out;
-    -webkit-transition: -webkit-transform .3s ease-in-out;
-    transition: -webkit-transform .3s ease-in-out;
-    -o-transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out;
-    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+    @media (max-width: 360px) {
+      .form__button {
+        font-size: 14px; } }
     .form__button--delete {
       min-width: 128px;
       height: 40px;
@@ -385,6 +392,12 @@ body {
         -webkit-transform: scale(1.2);
             -ms-transform: scale(1.2);
                 transform: scale(1.2); }
+      @media (max-width: 360px) {
+        .form__button--delete {
+          height: 32px;
+          margin-left: 20px;
+          margin-right: 26px;
+          min-width: 70px; } }
     .form__button--load {
       background: #f4f841;
       -webkit-box-shadow: 0px 6px 10px rgba(244, 248, 65, 0.4);
@@ -398,6 +411,11 @@ body {
         -webkit-transform: scale(1.2);
             -ms-transform: scale(1.2);
                 transform: scale(1.2); }
+      @media (max-width: 360px) {
+        .form__button--load {
+          height: 32px;
+          margin-left: 20px;
+          min-width: 70px; } }
     .form__button--save {
       min-width: 96px;
       height: 40px;
@@ -410,6 +428,10 @@ body {
         -webkit-transform: scale(1.2);
             -ms-transform: scale(1.2);
                 transform: scale(1.2); }
+      @media (max-width: 360px) {
+        .form__button--save {
+          height: 32px;
+          min-width: 70px; } }
   .form__button-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -432,5 +454,8 @@ body {
 .main {
   max-width: 544px;
   width: 100%; }
+  @media (max-width: 360px) {
+    .main {
+      max-width: 296px; } }
 
 /*# sourceMappingURL=main.css.map */
