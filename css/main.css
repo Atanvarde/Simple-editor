@@ -363,7 +363,12 @@ body {
     text-transform: uppercase;
     -webkit-transition: background-color 0.2s ease-out;
     -o-transition: background-color 0.2s ease-out;
-    transition: background-color 0.2s ease-out; }
+    transition: background-color 0.2s ease-out;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
     .form__button--delete {
       min-width: 128px;
       height: 40px;
@@ -376,7 +381,10 @@ body {
       margin-left: 24px;
       margin-right: 40px; }
       .form__button--delete:hover {
-        background: #fa6a6a; }
+        background: #fa6a6a;
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2); }
     .form__button--load {
       background: #f4f841;
       -webkit-box-shadow: 0px 6px 10px rgba(244, 248, 65, 0.4);
@@ -386,7 +394,10 @@ body {
       margin-left: 24px;
       min-width: 96px; }
       .form__button--load:hover {
-        background: #f7f8ab; }
+        background: #f7f8ab;
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2); }
     .form__button--save {
       min-width: 96px;
       height: 40px;
@@ -395,7 +406,10 @@ body {
               box-shadow: 0px 6px 10px rgba(20, 36, 174, 0.4);
       color: #f4f841; }
       .form__button--save:hover {
-        background: #164ecf; }
+        background: #164ecf;
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2); }
   .form__button-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
