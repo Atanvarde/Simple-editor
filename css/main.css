@@ -450,6 +450,9 @@ body {
     outline-color: aliceblue;
     padding: 16px;
     width: 100%; }
+    @media (max-width: 360px) {
+      .form__textarea {
+        font-size: 20px; } }
 
 .main {
   max-width: 544px;
