@@ -55,6 +55,7 @@ body {
     outline-color: $iron;
     text-transform: uppercase;
     transition: background-color 0.2s ease-out;
+    transition: transform .3s ease-in-out;
     &--delete {
       min-width: 128px;
       height: 40px;
@@ -66,6 +67,7 @@ body {
       margin-right: 40px;
       &:hover {
         background: #fa6a6a;
+        transform: scale(1.2);
       }
     }
     &--load {
@@ -77,6 +79,7 @@ body {
       min-width: 96px;
       &:hover {
         background: #f7f8ab;
+        transform: scale(1.2);
       }
     }
     &--save {
@@ -87,6 +90,7 @@ body {
       color: $yellow;
       &:hover {
         background: #164ecf;
+        transform: scale(1.2);
       }
     }
   }
