@@ -132,6 +132,9 @@ body {
     outline-color: aliceblue;
     padding: 16px;
     width: 100%;
+    @media (max-width: $mobile) {
+      font-size: 20px;
+    }
   }
 }
 
