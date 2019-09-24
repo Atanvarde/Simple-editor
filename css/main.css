@@ -442,6 +442,7 @@ body {
   .form__textarea-wrapper {
     margin: 0; }
   .form__textarea {
+    border: none;
     border-radius: 5px;
     min-height: 288px;
     font-size: 28px;
